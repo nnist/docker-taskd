@@ -1,5 +1,5 @@
-FROM alpine:3.4
-MAINTAINER Oscar Garcia Amor (https://ogarcia.me)
+FROM alpine:latest
+MAINTAINER Andreas Rammhold (andreas@rammhold.de)
 
 # Install necessary stuff
 RUN apk -U --no-progress upgrade && \
