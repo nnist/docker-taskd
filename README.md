@@ -30,6 +30,21 @@ docker run -d \
 This makes a set of self signed certificates and minimal configuration to
 run server.
 
+### Run on remote server
+
+To run this container on a remote server, simply run
+
+```sh
+docker run -d \
+  --name=taskd \
+  -p 53589:53589 \
+  -v /srv/taskd:/var/taskd \
+  -h <aostname>
+  andir/taskd
+```
+
+Where `<hostname>` is the domain how the remote server can be reached.
+
 ## Manual setup
 
 The `run.sh` script that launch **taskd** server always look for config file
