@@ -39,7 +39,7 @@ docker run -d \
   --name=taskd \
   -p 53589:53589 \
   -v /srv/taskd:/var/taskd \
-  -h <aostname>
+  -h <hostname>
   andir/taskd
 ```
 
