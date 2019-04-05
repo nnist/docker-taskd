@@ -24,7 +24,7 @@ if ! test -e ${TASKDDATA}/config; then
   ./generate
   cd /
 
-  # Configure taskd to use this newly generated certificates
+  # Configure taskd to use these newly generated certificates
   taskd config --force client.cert ${TASKDDATA}/pki/client.cert.pem
   taskd config --force client.key ${TASKDDATA}/pki/client.key.pem
   taskd config --force server.cert ${TASKDDATA}/pki/server.cert.pem
